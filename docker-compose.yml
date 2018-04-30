@@ -15,4 +15,4 @@ services:
       - /etc/localtime:/etc/localtime:ro
       - ./cache/redis:/data                                # volume for data
     environment:
-      - REDIS_VERSION=3.2
+      - REDIS_VERSION=4.0

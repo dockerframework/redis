@@ -1,4 +1,4 @@
-ARG REDIS_VERSION=3.2
+ARG REDIS_VERSION=4.0
 FROM redis:${REDIS_VERSION}-alpine
 
 # ================================================================================================
@@ -19,8 +19,6 @@ FROM redis:${REDIS_VERSION}-alpine
 #   - Vince Chu @vwchu
 #   - Huadong Zuo @zuohuadong
 # ================================================================================================
-
-MAINTAINER "Laradock Team <mahmoud@zalt.me>"
 
 RUN mkdir -p /data && chown redis:redis /data
 VOLUME /data
